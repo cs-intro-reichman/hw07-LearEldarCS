@@ -25,8 +25,8 @@ public class Binomial {
 		//// It then calls binomial(n, k, memo), which does all the heavy lifiting.
 		//// Replace the following statement with your code.
 			int [][] memo = new int[n+1][k+1];
-				for(int i = 0; i < n; i++) {
-					for(int j = 0; j < k; j++) {
+				for(int i = 0; i < n + 1; i++) {
+					for(int j = 0; j < k + 1; j++) {
 						memo[i][j] = -1;
 					}
 				}
